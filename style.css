@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: 'Lato', sans-serif;
   padding: 0;
@@ -206,6 +210,45 @@ nav{
   background-color: whitesmoke;
   position: relative;
   clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.payment{
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  padding: 10px 50px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 31px 22px rgba(0,0,0,0.8);
+-webkit-box-shadow: 1px 1px 31px 22px rgba(0,0,0,0.8);
+-moz-box-shadow: 1px 1px 31px 22px rgba(0,0,0,0.8);
+}
+
+.payTitle{
+  font-size: 20px;
+  color: lightgray;
+}
+
+label{
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.payInput{
+  padding 10px;
+  margin: 10px 0px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.payInput::placeholder{
+  color: rgb(163, 163, 163)
 }
 
 .productImg{
